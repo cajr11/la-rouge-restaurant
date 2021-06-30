@@ -1,0 +1,14 @@
+{
+  "name": "la-rouge-restaurant",
+  "version": "1.0.0",
+  "description": "An oriental restaurant landing page",
+  "main": "interactive.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher Aondo",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  }
+}
