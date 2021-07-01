@@ -17,20 +17,20 @@ body {
 .nav-items {
   position: fixed;
   top: 0;
+  padding-left: 0;
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
   height: 16vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
   transition: all 1s ease;
-  z-index: 10;
+  z-index: 100;
 }
 
 .sticky {
   background-color: rgba(0, 0, 0, 0.8);
-  transition: all 1s ease;
 }
 
 .nav-link {
@@ -101,7 +101,8 @@ body {
 }
 
 .sec-heading {
-  width: 30vw;
+  width: 100vw;
+  text-align: center;
   margin: 1rem auto;
   font-weight: 300;
   font-size: 2.5rem;
@@ -109,7 +110,8 @@ body {
 }
 
 .details {
-  width: 60vw;
+  width: 80vw;
+  text-align: center;
   margin: 0rem auto;
   text-align: center;
   font-weight: 100;
@@ -147,12 +149,15 @@ body {
   height: 80vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .chef-heading {
   width: 40vh;
   margin: 2rem auto;
   font-weight: 100;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -167,6 +172,7 @@ body {
   margin: 1rem auto;
   font-size: 1.2rem;
   font-weight: 100;
+  text-align: center;
 }
 
 .line {
@@ -187,7 +193,8 @@ body {
 }
 
 .meals-head {
-  width: 18vw;
+  width: 100vw;
+  text-align: center;
   margin: 1rem auto;
   font-weight: 300;
   font-size: 2.5rem;
@@ -229,7 +236,8 @@ body {
 /*----------- Ambience ---------------*/
 .ambience-head {
   padding-top: 3rem;
-  width: 16vw;
+  width: 100vw;
+  text-align: center;
   margin: 1rem auto;
   font-weight: 300;
   font-size: 2.5rem;
@@ -320,7 +328,7 @@ body {
 /*----------The bar -----------*/
 .bar-head {
   padding-top: 3rem;
-  width: 16vw;
+  width: 100vw;
   text-align: center;
   margin: 1rem auto;
   font-weight: 300;
@@ -330,13 +338,13 @@ body {
 }
 
 .bar-caption {
-  width: 50vw;
+  width: 60vw;
   margin: 0rem auto 4rem auto;
   text-align: center;
   font-weight: 100;
   font-size: 1.2rem;
   color: var(--color-secondary);
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .cocktails-container {
@@ -358,7 +366,6 @@ body {
 }
 
 .cocktails li {
-  display: block;
   width: 50%;
 }
 
@@ -384,7 +391,7 @@ body {
 
 /*----------Contact-----------*/
 .contact {
-  width: 20vw;
+  width: 100vw;
   text-align: center;
   margin: 4rem auto;
   font-weight: 300;
@@ -506,7 +513,7 @@ input:focus {
 
 .back-top {
   width: 30vw;
-  margin: 1rem auto 3rem auto;
+  margin: 4rem auto;
   text-decoration: none;
   text-align: center;
 }
@@ -515,4 +522,184 @@ input:focus {
   text-decoration: none;
   color: var(--color-tertiary);
   text-align: center;
+}
+
+/*-------Media Queries----------*/
+
+@media (max-width: 896px) {
+  /* chef */
+  .chef-img {
+    height: 70vh;
+    width: 30%;
+  }
+
+  .summary {
+    border: 1px solid white;
+    border-radius: 5%;
+    width: 25rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .chef-heading {
+    width: 100%;
+    font-size: 0.74rem;
+  }
+
+  .chef-words {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .details-chef {
+    font-size: 0.74rem;
+  }
+
+  /* meals */
+  .meal-img {
+    width: 25vw;
+    height: 60vh;
+  }
+
+  .meal-caption {
+    font-size: 0.8rem;
+  }
+
+  /* bar */
+
+  .cocktails li {
+    width: 50%;
+    height: 100%;
+  }
+
+  .cktl-display {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cktl-display img {
+    transform: scale(1.5);
+  }
+
+  .cktl-display img:hover {
+    transform: scale(1.3);
+  }
+
+  /* contact */
+
+  .extra-info {
+    padding-bottom: 1rem;
+  }
+
+  address,
+  .sub-caption {
+    font-size: 0.8rem;
+  }
+
+  .input-mail {
+    height: 1.8rem;
+    font-size: 0.7rem;
+  }
+
+  /* footer */
+
+  .footer-items h4 {
+    font-size: 0.9rem;
+  }
+
+  .footer-items p,
+  .footer-items a {
+    font-size: 0.6rem;
+  }
+
+  .back-top {
+    margin: 1rem auto;
+  }
+
+  .back-top a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-height: 568px) and (max-width: 300) {
+  /* header background */
+  .hd {
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .hd-back > img {
+    height: 50vh;
+  }
+
+  /* chef */
+
+  .restaurant-det {
+    height: 35vh;
+    margin-bottom: 7rem;
+  }
+
+  .chef-det {
+    height: 50vh;
+  }
+
+  .chef-img {
+    height: 50vh;
+  }
+
+  .summary {
+    height: 50vh;
+  }
+
+  /* meals */
+  .meal-img {
+    width: 25vw;
+    height: 30vh;
+  }
+
+  .meal-caption {
+    font-size: 0.8rem;
+  }
+
+  /* ambience */
+
+  .slider {
+    height: 20rem;
+    margin-bottom: 5rem;
+  }
+
+  .slide > img {
+    height: 20rem;
+  }
+
+  .slider-btn {
+    top: 40%;
+  }
+
+  /* the bar */
+  .cocktails-container {
+    height: 25vh;
+    padding-right: 3rem;
+  }
+
+  /* contact */
+
+  address,
+  .sub-caption {
+    font-size: 0.7rem;
+  }
+
+  .sub-caption {
+    margin: 2rem auto;
+  }
+
+  .input-mail {
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+  }
 }
