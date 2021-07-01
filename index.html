@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -13,15 +14,17 @@
     />
     <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
     <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/script.js"></script>
     <title>La Rouge</title>
   </head>
   <body>
+    <!-- Nav & Slides -->
     <header class="header" id="header">
       <nav class="nav-bar">
         <ul class="nav-items">
           <li class="nav-link"><a href="#about">About Us</a></li>
-          <li class="nav-link"><a href="#about">Meals</a></li>
-          <li class="nav-link"><a href="#about"></a>Atmosphere</li>
+          <li class="nav-link"><a href="#menu">Menu</a></li>
+          <li class="nav-link"><a href="#ambience">Ambience</a></li>
           <li class="nav-link">
             <a href="#header">
               <img
@@ -29,34 +32,28 @@
                 alt="La Rouge cutlery logo with writing"
             /></a>
           </li>
-          <li class="nav-link"><a href="#">The Bar</a></li>
-          <li class="nav-link"><a href="#"></a>Contact</li>
-          <li class="btn-reserve"><a href="#">Reserve Now</a></li>
+          <li class="nav-link"><a href="#bar">The Bar</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+          <li class="btn-reserve"><a class="reserve-link" href="#">Reserve Now</a></li>
         </ul>
       </nav>
 
-      <div class="slider">
-        <div class="slide">
+      <div class="hd">
+        <div class="hd-back">
           <img src="/img/interior-1.jpg" alt="interior dining ground floor" />
-        </div>
-        <div class="slide">
-          <img src="/img/interior-vip.jpg" alt="interior dining Vip section" />
-        </div>
-        <div class="slide">
-          <img src="/img/exterior-1.jpg" alt="terrace dining section" />
         </div>
       </div>
     </header>
 
+    <!-- About Us -->
     <section class="about-us" id="about">
       <article class="restaurant-det">
         <h2 class="sec-heading">What is La Rouge?</h2>
         <p class="details">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut
-          convallis lacus. Quisque non facilisis magna, in ultricies mi. Cras ut
-          tempor enim. Sed pretium risus sem, at venenatis odio fringilla ut.
-          Nullam non risus eget velit imperdiet ultricies. Ut feugiat mauris mi,
-          vel lacinia leo varius vel.
+          The place with the best gastronomic and mixology experience. A lounge
+          restaurant with international haute cuisine that, with its new and
+          different concept, seeks to create a versatile place in its different
+          spaces and environments.
         </p>
         <img
           class="initials-img"
@@ -86,6 +83,187 @@
           </p>
         </figcaption>
       </figure>
+      <div class="line"></div>
     </section>
+
+    <!-- Menu section -->
+    <section class="menu" id="menu">
+      <h2 class="meals-head">Our Dishes</h2>
+      <p class="meals-caption">
+        These are a few of our favourite signature dishes
+      </p>
+      <div class="meals-display">
+        <figure class="meals">
+          <img
+            class="meal-img"
+            src="/img/meal-steak.jpg"
+            alt="Grilled steak wrapped in breading"
+          />
+          <figcaption class="meal-caption">Grilled Steak Supreme</figcaption>
+        </figure>
+        <figure class="meals">
+          <img
+            class="meal-img"
+            src="/img/meal-prawn.jpg"
+            alt="Prawns in oyster puree sauce"
+          />
+          <figcaption class="meal-caption">Portabello Prawns</figcaption>
+        </figure>
+        <figure class="meals">
+          <img
+            class="meal-img"
+            src="/img/meal-salmon.jpg"
+            alt="Grilled salmon in vegetables and soy"
+          />
+          <figcaption class="meal-caption">Salmon La Frances</figcaption>
+        </figure>
+      </div>
+      <div class="line"></div>
+    </section>
+
+    <!-- Ambience Section -->
+    <section class="ambience" id="ambience">
+      <h2 class="ambience-head">Ambience</h2>
+      <div class="slider">
+        <div class="slide slide-1">
+            <img src="/img/cktl-bar.jpg" alt="The cocktail bar" />
+          </div>
+          <div class="slide slide-2">
+            <img src="img/interior-1.jpg" alt="Main interior view" />
+          </div>
+          <div class="slide slide-3">
+            <img src="/img/interior-2.jpg" alt="Second interior section" />
+          </div>
+          <div class="slide slide-4">
+            <img src="/img/interior-vip.jpg" alt="The VIP section" />
+          </div>
+          <div class="slide slide-5">
+            <img src="/img/exterior-1.jpg" alt="The restaurant balcony" />
+          </div>
+          <div class="slide slide-6">
+            <img src="/img/exterior-2.jpg" alt="The tables outside the restaurant" />
+          </div>
+          <button class="slider-btn btn-left">
+            &larr;</i>
+          </button>
+          <button class="slider-btn btn-right">
+            &rarr;</i>
+          </button>
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="line"></div>
+    </section>
+
+    <!-- Bar Section -->
+    <section class="bar" id="bar">
+      <h2 class="bar-head">The Bar</h2>
+      <p class="bar-caption">At LA ROUGE we offer a fun and different cocktail proposal. Together with our lounge and terrace area, the music and our mixology, we created a new and unique setting for the city.</p>
+      <div class="cocktails-container">
+        <ul class="cocktails">
+          <li>
+            <figure class="cktl-display">
+              <img
+                src="img/cktl-berry-sloth-swizzler.jpg"
+                alt="Berry Sloth Swizzler cocktail"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure class="cktl-display">
+              <img
+                src="img/cktl-honey-tiger-blitz.jpg"
+                alt="Honey Tiger Blitz Cocktail"
+              />
+            </figure>
+          </li>
+        </ul>
+        <ul class="cocktails">
+          <li>
+            <figure class="cktl-display">
+              <img
+                src="/img/cktl-tonic-dry-limon.jpg"
+                alt="Tonic Dry Lemon Cocktail"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure class="cktl-display">
+              <img 
+              src="/img/cktl-triple-fantasy-frutal.jpg" 
+              alt="Triple Fantasy Frutal Cocktail" 
+              />
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <div class="line"></div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact">
+     <h2 class="contact">Contact Us</h2>
+     <div class="extra-info">
+        <div class="loc-info">
+          <h3 class="info-head">Location</h3>
+          <div class="line-small"></div>
+          <address>
+            <p class="address-complete"> 278 North Bland Cove, Canary Wharf. London. NE 34B</p>
+            <p class="opening hours">
+              Monday to Thursday from 1 pm - 1 am
+              Friday and Saturday from 1 pm - 2 am
+              Sunday from 1 pm - 6 pm</p>
+            <p class="tel-num">Tel: +44000000333</p>
+          </address>
+        </div>
+        <div class="line-big"></div>
+        <div class="Newsletter">
+            <h3 class="info-head">Newsletter</h3>
+            <div class="line-small-nxt"></div>
+            <p class="sub-caption">Subscribe and receive in your email special accesses and promotions.</p>
+            <input class="input-mail" type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+      </div>
+      <img
+          class="initials-img"
+          src="/img/lr-logo.png"
+          alt="restaurant initals gold"
+        />
+    </section>
+
+  <!-- Footer -->
+    <footer>
+      <div class="footer-seperator"></div>
+      <div class="footer-items">
+        <div class="foot-item">
+          <h4>Follow Us</h4>
+          <p>Facebooke</p>
+          <p>Twitter</p>
+          <p>Instagram</p>
+        </div>
+        <div class="foot-item">
+          <h4>Opening Hours</h4>
+          <p class="op-hours">
+            Monday to Thursday from 1 pm - 1 am
+            Friday and Saturday from 1 pm - 2 am
+            Sunday from 1 pm - 6 pm</p>
+          <p class="tel">Tel: +44000000333</p>
+        </div>
+        <div class="foot-item">
+          <h4>Opening hours</h4>
+            <p class="address-footer"> 278 North Bland Cove, Canary Wharf. London. NE 34B</p>
+        </div>
+        <div class="foot-item">
+          <h4>Navigation</h4>
+          <a href="#about">About us</a>
+          <a href="#menu">Menu</a>
+          <a href="#ambience">Ambience</a>
+          <a href="#bar">The Bar</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="back-top"><a href="#header">Back to top &#9651;</a></div>
+    </footer>
   </body>
 </html>
