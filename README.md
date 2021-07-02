@@ -1,3 +1,5 @@
 # LA ROUGE RESTAURANT
 
-A responsive landing page for a restaurant, still being implemented.
+A fully responsive landing page for a restaurant I designed in all the way from HTML to CSS and JS.
+
+![](la-rouge.gif)
