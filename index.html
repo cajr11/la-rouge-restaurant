@@ -26,8 +26,9 @@
           <li class="nav-link"><a href="#menu">Menu</a></li>
           <li class="nav-link"><a href="#ambience">Ambience</a></li>
           <li class="nav-link">
-            <a href="#header">
+            <a class="btn-logo" href="#header">
               <img
+              class="nav-logo"
                 src="/img/logo-1-white.png"
                 alt="La Rouge cutlery logo with writing"
             /></a>
@@ -263,5 +264,33 @@
 
       <div class="back-top"><a href="#header">Back to top &#9651;</a></div>
     </footer>
+
+    <!--------Reservation Modal----------------------->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <form class="modal__form">
+        <h2 class="modal__header">
+          Make a reservation
+        </h2>
+        <div class="form-item">
+          <label>First Name:</label>
+          <input type="text" />
+        </div>
+        <div class="form-item">
+          <label>Last Name:</label>
+        <input type="text" />
+        </div>
+        <div class="form-item">
+          <label>Email Address:</label>
+          <input type="email" />
+        </div>
+        <div class="form-item">
+          <label>Phone Number:</label>
+        <input type="tel" />
+      </div>
+      <a class="btn">Reserve</a>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
