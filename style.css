@@ -529,24 +529,20 @@ input:focus {
 @media (max-width: 896px) {
   /* chef */
   .chef-img {
-    height: 70vh;
+    height: 50vh;
     width: 30%;
   }
 
   .summary {
-    border: 1px solid white;
-    border-radius: 5%;
-    width: 25rem;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 20rem;
+    height: 50vh;
+    justify-content: space-evenly;
     overflow: hidden;
   }
 
   .chef-heading {
     width: 100%;
-    font-size: 0.74rem;
+    font-size: 0.74em;
   }
 
   .chef-words {
@@ -562,7 +558,7 @@ input:focus {
   /* meals */
   .meal-img {
     width: 25vw;
-    height: 60vh;
+    height: 40vh;
   }
 
   .meal-caption {
@@ -625,8 +621,105 @@ input:focus {
   }
 }
 
-@media (min-height: 568px) and (max-width: 300) {
-  /* header background */
+/* Smaller devices */
+
+@media (max-width: 650px) {
+  /* nav */
+  .nav-link {
+    font-size: 0.5rem;
+  }
+
+  .nav-logo {
+    height: 6rem;
+  }
+
+  .btn-reserve {
+    font-size: 0.5rem;
+    height: 1.5rem;
+    width: 4.5rem;
+  }
+
+  .colored-border {
+    border: 1px solid var(--color-tertiary);
+    transition: all 0.3s ease;
+  }
+
+  /* chef */
+
+  .chef-det {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+  }
+
+  .summary {
+    width: 60vw;
+    height: 80vh;
+  }
+
+  .chef-img {
+    margin-bottom: 2rem;
+    width: 50vw;
+  }
+
+  /* meals */
+  .meals-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .meal-img {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  .meal-caption {
+    font-size: 0.8rem;
+  }
+
+  /* ambience */
+  .slider {
+    height: 20rem;
+  }
+
+  .slide > img {
+    height: 20rem;
+  }
+
+  /* the bar */
+  .cocktails-container {
+    height: 55vh;
+    padding-right: 3rem;
+  }
+
+  .input-mail {
+    height: 1.8rem;
+    font-size: 0.6rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 555px) {
+  /* nav */
+  .nav-items {
+    height: 12vh;
+  }
+
+  .nav-link {
+    font-size: 0.4rem;
+  }
+
+  .nav-logo {
+    height: 5rem;
+  }
+
+  .btn-reserve {
+    font-size: 0.5rem;
+    height: 1.4rem;
+    width: 4.3rem;
+  }
+
   .hd {
     height: 50vh;
     overflow: hidden;
@@ -636,29 +729,51 @@ input:focus {
     height: 50vh;
   }
 
+  .colored-border {
+    border: 1px solid var(--color-tertiary);
+    transition: all 0.3s ease;
+  }
+
   /* chef */
 
-  .restaurant-det {
-    height: 35vh;
-    margin-bottom: 7rem;
-  }
-
   .chef-det {
-    height: 50vh;
-  }
-
-  .chef-img {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
   }
 
   .summary {
-    height: 50vh;
+    width: 60vw;
+    height: 60vh;
+  }
+
+  .chef-img {
+    margin-bottom: 2rem;
+    height: 60vh;
+    width: 60vw;
+  }
+
+  .chef-heading {
+    font-size: 0.7em;
+  }
+
+  .chef-words {
+    font-size: 0.8rem;
+  }
+
+  .details-chef {
+    font-size: 0.7rem;
   }
 
   /* meals */
+  .meals-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .meal-img {
-    width: 25vw;
-    height: 30vh;
+    width: 50vw;
+    height: 40vh;
   }
 
   .meal-caption {
@@ -666,40 +781,22 @@ input:focus {
   }
 
   /* ambience */
-
   .slider {
     height: 20rem;
-    margin-bottom: 5rem;
   }
 
   .slide > img {
     height: 20rem;
   }
 
-  .slider-btn {
-    top: 40%;
-  }
-
   /* the bar */
   .cocktails-container {
-    height: 25vh;
+    height: 55vh;
     padding-right: 3rem;
   }
 
-  /* contact */
-
-  address,
-  .sub-caption {
-    font-size: 0.7rem;
-  }
-
-  .sub-caption {
-    margin: 2rem auto;
-  }
-
   .input-mail {
-    display: block;
-    margin: 0 auto;
-    width: 8rem;
+    height: 1.8rem;
+    font-size: 0.5rem;
   }
 }
