@@ -514,6 +514,11 @@ input:focus {
   font-weight: 100;
 }
 
+.tel {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
 .foot-item {
   display: flex;
   flex-direction: column;
