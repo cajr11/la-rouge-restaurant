@@ -2,13 +2,18 @@
   "name": "la-rouge-restaurant",
   "version": "1.0.0",
   "description": "An oriental restaurant landing page",
-  "main": "interactive.js",
+  "default": "index.html",
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Christopher Aondo",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-icons": "^1.5.0"
+    "core-js": "^3.15.2",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-nightly.749"
   }
 }

@@ -1,4 +1,6 @@
 import { WINDOW_POS } from "./config.js";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 // Selecting DOM Elements
 const navBar = document.querySelector(".nav-items");
