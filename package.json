@@ -9,10 +9,7 @@
   },
   "author": "Christopher Aondo",
   "license": "ISC",
-  "dependencies": {
-    "core-js": "^3.15.2",
-    "regenerator-runtime": "^0.13.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "parcel": "^2.0.0-nightly.749"
   }

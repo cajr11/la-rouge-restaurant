@@ -75,6 +75,11 @@ body {
 }
 .colored-border {
   border: 1px solid var(--color-tertiary);
+  transition: all 0.6s ease;
+}
+
+.animate {
+  visibility: hidden;
   transition: all 0.3s ease;
 }
 
