@@ -20,7 +20,7 @@ body {
   padding-left: 0;
   margin: 0 auto;
   width: 100%;
-  height: 16vh;
+  height: 14vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -181,7 +181,7 @@ body {
 }
 
 .line {
-  margin: 0 auto;
+  margin: 4rem auto;
   border: 1px solid var(--color-tertiary);
   width: 6rem;
 }
@@ -189,17 +189,19 @@ body {
 /*----------- Menu ---------------*/
 
 .menu {
-  padding-top: 3rem;
+  padding-top: 4rem;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--color-secondary);
+  margin-bottom: 3rem;
 }
 
 .meals-head {
   width: 100vw;
   text-align: center;
+  padding-top: 2rem;
   margin: 1rem auto;
   font-weight: 300;
   font-size: 2.5rem;
@@ -239,8 +241,9 @@ body {
 }
 
 /*----------- Ambience ---------------*/
+
 .ambience-head {
-  padding-top: 3rem;
+  padding-top: 6rem;
   width: 100vw;
   text-align: center;
   margin: 1rem auto;
@@ -398,6 +401,7 @@ body {
 .contact {
   width: 100vw;
   text-align: center;
+  padding-top: 2rem;
   margin: 4rem auto;
   font-weight: 300;
   font-size: 2.5rem;
