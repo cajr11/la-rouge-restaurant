@@ -1,6 +1,4 @@
 import { WINDOW_POS } from "./config.js";
-import "core-js/stable";
-import "regenerator-runtime/runtime";
 
 // Selecting DOM Elements
 const navBar = document.querySelector(".nav-items");
@@ -69,13 +67,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
+////////// Hide nav bar while user scrolling ///////////////
+
 ///////////// Impementing Smooth Scroll //////////////
 navBar.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (e.target.parentElement.classList.contains("nav-link")) {
     const id = e.target.getAttribute("href");
+    navBar.classList.add("animate");
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      navBar.classList.remove("animate");
+    }, 3000);
   }
 
   if (e.target.parentElement.classList.contains("btn-logo")) {
